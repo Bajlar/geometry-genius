@@ -23,5 +23,139 @@
     </div>
   </nav>
   <!-- navbar end -->
+
+  <!-- main section start -->
+  <!-- <main>
+    <section class="container mt-5 mb-5">
+      <div class="row">
+        <div class="col-md-9">
+          <div class="row row-cols-1 row-cols-md-3 g-2">
+            <div class="col">
+              <div class="card h-100 text-center p-4">
+                <img src="images/triangle.png" class="card-img-top img-fluid mb-2" alt="">
+                <div class="card-body">
+                  <h5 id="first-element" class="card-title fw-bold">Triangle</h5>
+                  <p id="triangle-area" class="card-text">Area (A) = 0.5 X b X h</p>
+                  <div class="d-flex justify-content-center align-items-center">
+                    <input id="triangle-base-input" class="ps-2"  style="width: 70px" type="text" placeholder="b">
+                    <p class="ms-2 me-2 mt-2">cm</p>
+                    <input id="triangle-height-input" class="ps-2" style="width: 70px" type="text" placeholder="h">
+                    <p class="ms-2 mt-2">cm</p>
+                  </div>
+                  <button id="btn-triangle" class="btn btn-primary fw-bold mt-3" style="width: 10rem;">Calculate</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100 text-center p-4">
+                <img src="images/rectangle.png" class="card-img-top img-fluid mb-4" alt="">
+                <div class="card-body mt-3">
+                  <h5 id="second-element" class="card-title fw-bold">Rectangle</h5>
+                  <p id="rectangle-area" class="card-text">Area (A) = w X l</p>
+                  <div class="d-flex justify-content-center align-items-center">
+                    <input id="rectangle-width-field" class="ps-2"  style="width: 70px" type="text" placeholder="w">
+                    <p class="ms-2 me-2 mt-2">cm</p>
+                    <input id="rectangle-lenght-field" class="ps-2" style="width: 70px" type="text" placeholder="l">
+                    <p class="ms-2 mt-2">cm</p>
+                  </div>
+                  <button id="btn-rectangle" class="btn btn-primary fw-bold mt-3" style="width: 10rem;">Calculate</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100 text-center p-4">
+                <img src="images/parallelogram.png" class="card-img-top img-fluid mb-5" alt="">
+                <div class="card-body mt-3">
+                  <h5 id="third-element" class="card-title fw-bold">Parallelogram</h5>
+                  <p class="card-text">Area (A) = b X h</p>
+                  <p class="card-text">b=10cm, h=12cm</p>
+                  <div class="d-flex justify-content-center align-items-center">
+                    <input id="parallelogram-base-field" class="ps-2"  style="width: 70px" type="text" placeholder="b">
+                    <p class="ms-2 me-2 mt-2">10cm</p>
+                    <input id="parallelogram-height-field" class="ps-2" style="width: 70px" type="text" placeholder="h">
+                    <p class="ms-2 mt-2">12cm</p>
+                  </div>
+                  <button id="btn-parallelogram" class="btn btn-primary fw-bold mt-3" style="width: 10rem;">Calculate</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100 text-center p-4">
+                <img src="images/rhombus.png" class="card-img-top img-fluid mb-4" alt="">
+                <div class="card-body mt-3">
+                  <h5 id="fourth-element" class="card-title fw-bold">Rhombus</h5>
+                  <p class="card-text">Area (A) = 0.5 X d<sub>1</sub> X d<sub>2</sub></p>
+                  <p class="card-text">d<sub>1</sub> = 16cm, &nbsp; d<sub>2</sub> = 8cm</p>
+                  <div class="d-flex justify-content-center align-items-center">
+                    <input id="rhombus-base-field" class="ps-2"  style="width: 70px" type="text" placeholder="d1">
+                    <p class="ms-2 me-2 mt-2">16cm</p>
+                    <input id="rhombus-height-field" class="ps-2" style="width: 70px" type="text" placeholder="d2">
+                    <p class="ms-2 mt-2">8cm</p>
+                  </div>
+                  <button id="btn-rhombus" class="btn btn-primary fw-bold mt-3" style="width: 10rem;">Calculate</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100 text-center p-4">
+                <img src="images/pentagon.png" class="card-img-top img-fluid" alt="">
+                <div class="card-body">
+                  <h5 id="fifth-element" class="card-title fw-bold">Pentagon</h5>
+                  <p class="card-text">Area (A) = 0.5 X p X b</p>
+                  <p class="card-text">p = 6cm, &nbsp; b = 10cm</p>
+                  <div class="d-flex justify-content-center align-items-center">
+                    <input id="pentagon-parimeter-field" class="ps-2"  style="width: 70px" type="text" placeholder="p">
+                    <p class="ms-2 me-2 mt-2">6cm</p>
+                    <input id="pentagon-base-field" class="ps-2" style="width: 70px" type="text" placeholder="b">
+                    <p class="ms-2 mt-2">10cm</p>
+                  </div>
+                  <button id="btn-pentagon" class="btn btn-primary fw-bold mt-3" style="width: 10rem;">Calculate</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100 text-center p-4">
+                <img src="images/ellipse.png" class="card-img-topimg-fluid mb-4" alt="">
+                <div class="card-body mt-5">
+                  <h5 id="sixth-element" class="card-title fw-bold">Ellipse</h5>
+                  <p class="card-text">Area (A) = &pi;ab</p>
+                  <p class="card-text">a = 10cm, b = 4cm</p>
+                  <div class="d-flex justify-content-center align-items-center">
+                    <input id="ellipse-aSide-field" class="ps-2"  style="width: 70px" type="text" placeholder="a">
+                    <p class="ms-2 me-2 mt-2">10cm</p>
+                    <input id="ellipse-bSide-field" class="ps-2" style="width: 70px" type="text" placeholder="b">
+                    <p class="ms-2 mt-2">4cm</p>
+                  </div>
+                  <abutton id="btn-ellipse" class="btn btn-primary fw-bold mt-3" style="width: 10rem;">Calculate</abutton>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div id="value-add-container" class="ms-1">
+            <h4 class="text-center fw-bold">Area Calculation</h4>
+            <table class="table">
+              <tbody id="table-container">
+                
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main> -->
+  <!-- main section end -->
+
+  <!-- bootstrap js link -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+  <script src="js/index.js"></script>
 </body>
 </html>
