@@ -49,6 +49,16 @@ document.getElementById('btn-pentagon').addEventListener('click', function() {
   displayData(elementParameter, areaTotal);
 });
 
+// ellipse area calculate
+document.getElementById('btn-ellipse').addEventListener('click', function() {
+  serial++
+  const elementParameter = document.getElementById('sixth-element').innerText;
+  const itemBase = document.getElementById('ellipse-aSide-field').value;
+  const itemHeight = document.getElementById('ellipse-bSide-field').value;
+  const areaTotal = (3.14 * itemBase * itemHeight).toFixed(2);
+  displayData(elementParameter, areaTotal);
+});
+
 // commom function display show the data
 function displayData(elementParameter, areaTotal) {
   const tableContainer = document.getElementById('table-container');
