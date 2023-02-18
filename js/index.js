@@ -39,6 +39,16 @@ document.getElementById('btn-rhombus').addEventListener('click', function() {
   displayData(elementParameter, areaTotal);
 });
 
+// pentagon area calculate
+document.getElementById('btn-pentagon').addEventListener('click', function() {
+  serial++
+  const elementParameter = document.getElementById('fifth-element').innerText;
+  const itemBase = document.getElementById('pentagon-parimeter-field').value;
+  const itemHeight = document.getElementById('pentagon-base-field').value;
+  const areaTotal = 0.5 * itemBase * itemHeight;
+  displayData(elementParameter, areaTotal);
+});
+
 // commom function display show the data
 function displayData(elementParameter, areaTotal) {
   const tableContainer = document.getElementById('table-container');
