@@ -19,6 +19,16 @@ document.getElementById('btn-rectangle').addEventListener('click', function() {
   displayData(elementParameter, areaTotal);
 });
 
+// parallelogram area calculate
+document.getElementById('btn-parallelogram').addEventListener('click', function() {
+  serial++
+  const elementParameter = document.getElementById('third-element').innerText;
+  const itemBase = document.getElementById('parallelogram-base-field').value;
+  const itemHeight = document.getElementById('parallelogram-height-field').value;
+  const areaTotal = itemBase * itemHeight;
+  displayData(elementParameter, areaTotal);
+});
+
 // commom function display show the data
 function displayData(elementParameter, areaTotal) {
   const tableContainer = document.getElementById('table-container');
