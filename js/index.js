@@ -29,6 +29,16 @@ document.getElementById('btn-parallelogram').addEventListener('click', function(
   displayData(elementParameter, areaTotal);
 });
 
+// rhombus area calculate
+document.getElementById('btn-rhombus').addEventListener('click', function() {
+  serial++
+  const elementParameter = document.getElementById('fourth-element').innerText;
+  const itemBase = document.getElementById('rhombus-base-field').value;
+  const itemHeight = document.getElementById('rhombus-height-field').value;
+  const areaTotal = 0.5 * itemBase * itemHeight;
+  displayData(elementParameter, areaTotal);
+});
+
 // commom function display show the data
 function displayData(elementParameter, areaTotal) {
   const tableContainer = document.getElementById('table-container');
